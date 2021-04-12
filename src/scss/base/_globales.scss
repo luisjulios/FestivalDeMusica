@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -8,6 +9,9 @@ html {
 body {
   font-family: $fuentePrincipal;
   font-size: 1.6rem;
+  &.fijar-body {
+    overflow: hidden;
+  }
 }
 p {
   font-size: 2rem;
